@@ -1,15 +1,1 @@
-sap.ui.define([
-		"com/sap/dinesh/covid19india/dashboard/controller/BaseController",
-		"sap/ui/model/json/JSONModel"
-	], function (BaseController, JSONModel) {
-		"use strict";
-
-		return BaseController.extend("com.sap.dinesh.covid19india.dashboard.controller.App", {
-
-			onInit : function () {
-				
-			}
-		});
-
-	}
-);
+sap.ui.define(["com/sap/dinesh/covid19india/dashboard/controller/BaseController","sap/ui/model/json/JSONModel"],function(e,t){"use strict";return e.extend("com.sap.dinesh.covid19india.dashboard.controller.App",{onInit:function(){var e;this.getView().getBusyIndicatorDelay();e=new t({busy:!0,delay:0}),this.setModel(e,"appView"),this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass())},fnSetAppNotBusy:function(){}})});
